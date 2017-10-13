@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Word Generator</title>
+  </head>
+  <style>
+  body{
+    background-color: silver;
+  }
+  .container{
+    height:auto;
+    width: 55%;
+    outline: 5px solid #35063E;
+    color:white;
+    background-color:black;
+  }
+
+  </style>
+  <body>
+    <center>
+      <h3>Random Word (attempt #{{ request.session.tries }})</h3>
+        <div class= "container">
+        <h1>{{ request.session.word }}</h1>
+        </div>
+        <a href="/generate"><button>Generate</button></a>
+        <a href="/reset"><button>Reset</button></a>
+    </center>
+
+  </body>
+</html>

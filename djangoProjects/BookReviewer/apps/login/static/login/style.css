@@ -1,0 +1,17 @@
+STATIC /LOGIN
+
+Style.css
+label{
+    width: 90px;
+    display: inline-block;
+}
+.messages > p{
+    font-weight: bold;
+    margin: 0;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
